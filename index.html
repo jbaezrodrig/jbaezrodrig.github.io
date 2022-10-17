@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tecnología y Felicidad</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+body {
+    text-align: justify;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-teal w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Cerrar Menú</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Tecnología<br>y Felicidad</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#felicidad" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">La Felicidad</a> 
+    <a href="#revolucion" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Revolución Tecnológica</a> 
+    <a href="#ventajas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ventajas</a> 
+	<a href="#inconvenientes" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Inconvenientes</a> 
+    <a href="#conclusion" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Conclusiones</a> 
+	<a href="#creditos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Créditos</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-teal w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-teal w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Tecnología y Felicidad</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="felicidad">
+    <h1 class="w3-jumbo "><b>¿NOS HACE FELICES LA TECNOLOGÍA?</b></h1>
+	<hr style="width:1125px;border:5px solid teal" class="w3-round">
+	<hr style="width:1125px;border:5px solid white" class="w3-round"> <!-- Crea espacio entre la foto y el titulo -->
+	<img src="Fotos/feliz.jpg" style="width:35%">
+	<hr style="width:1125px;border:5px solid white" class="w3-round"> <!-- Crea espacio entre la foto y la siguiente seccion -->
+    <h1 class="w3-xxxlarge w3-text-teal"><b>La Felicidad</b></h1>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+	<p><b>¿Cuántas veces te han preguntado si eres feliz? ¿Lo has considerado? </b>Según la RAE, la felicidad se define como un <i>“estado de grata satisfacción espiritual y física”.</i>
+	 Sólo la mitad de las personas en España se consideran felices… Y este número ha ido disminuyendo con los años.</p>
+	<p> <b>¿Hasta qué punto ha tenido influencia la tecnología en este descenso?</b> Vivimos en un mundo de rapidez, donde todo hay que resolverlo ya; 
+	de una vida digitalizada, hiperconectada, hipercomunicada.</p>
+	<img src="Fotos/feliztriste.png" alt="Felicidad y Tristeza a la Vez" class="center">
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Revolución Tecnológica -->
+  <div class="w3-container" id="revolucion" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-teal"><b>Revolución Tecnológica</b></h1>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <p>La tecnología es parte de nuestro día a día. Desde que nos despertamos y miramos el móvil, escuchamos música en el autobús, accedemos a la universidad con una tarjeta, 
+	trabajamos en los ordenadores hasta que vemos una película antes de ir a dormir. La tecnología es realmente imprescindible para todos nosotros,
+	de hecho, la persona promedio dura aproximadamente 7 horas al día utilizando la tecnología, <b>¡casi un 30% del día sin contar el tiempo que se está durmiendo!</b>
+	</p>
+    <p>El desarrollo de la tecnología ha sido exponencial, cada vez mejor y más asequible. En la década de los 80 apenas un 8,2% de la población tenía acceso a un ordenador por familia, 
+	un número que hoy en día ronda el 81,4% por persona. 
+    </p>
+	<hr style="width:1125px;border:5px solid white" class="w3-round"> <!-- Crea espacio entre la foto y el titulo -->
+	<!-- Photo grid (Comparacion) -->
+	<div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="Fotos/tel_viejo.jpg" style="width:50%" onclick="onClick(this)" alt="Teléfono antiguo" align=right>
+    </div>
+
+    <div class="w3-half">
+      <img src="Fotos/movilnuevo2.jpg" style="width:50%" onclick="onClick(this)" alt="Teléfono moderno" align=left>
+    </div>
+	</div>
+	<p><center><i>¡El avance de la tecnología es sorprendente!</i>
+	</p></center>
+	<hr style="width:1125px;border:5px solid white" class="w3-round"> <!-- Crea espacio entre la foto y el titulo -->
+	<p> Esta diferencia es aún mayor en los teléfonos móviles. Hoy en día, un 92% de la <u>población mundial</u> tiene un móvil y de media lo revisa <b>96 veces al día</b>. 
+	Esto se acentúa en los jóvenes, dado que el 50% se considera adicto al móvil.
+	</p>
+	<p><b>La tecnología, siempre ahí, ¿nos ayuda a ser felices? ¿Merece la pena todo el tiempo que invertimos en ella?</b>
+	</p>
+  </div>
+  
+  <!-- Ventajas -->
+  <div class="w3-container" id="ventajas" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-teal"><b>Ventajas</b></h1>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <p>La tecnología nos ha traído muchas cosas buenas. <b>Hace 50 años, nadie se hubiera imaginado que pudiera ver y hablar con otra persona del otro lado del planeta con tan solo un click.</b>
+	De hecho, el 67% de los usuarios dice que esta <u>comunicación online</u> ha contribuido a reforzar y mantener sus amistades y relaciones. También ha permitido hacer acciones de nuestra vida 
+	cotidiana más <u>fáciles</u> y de forma más <u>cómoda</u>. Somos capaces de comprar cualquier cosa sin salir de casa. Incluso tareas tan sencillas como subir las persianas 
+	se pueden automatizar con un asistente de voz. 
+    </p>
+	<p>Además de facilitarnos la vida, la tecnología también nos hace sentir más <u>seguros</u>. La implementación de cámaras, alarmas y otros sistemas de seguridad hace 
+	que nos encontremos más tranquilos en muchos lugares, incluyendo nuestras propias casas. El tema de la <u>ciberseguridad</u> está cada vez más presente, 
+	sobre todo en relación a transacciones que podemos hacer online. Obtener y revisar la <u>información</u> es más fácil ya que todos los documentos se encuentran al alcance de un click. 
+	Perder menos tiempo en labores simples y repetitivas logra un aumento de la <u>productividad</u>.
+	</p>
+	<p>Claramente la tecnología ha hecho las <u>vidas de personas con necesidades especiales mucho más dignas</u>. Algo es que puedan tener un asistente personal que les ayude con sus actividades,
+	sin embargo, es una maravilla que la tecnología les permita hacer las cosas por sí mismos. Les da libertad, y con esto, felicidad.
+	</p>
+	<img src="Fotos/handicappe2.jpg" style="width:40%" class="center">
+	<hr style="width:1125px;border:5px solid white" class="w3-round"> <!-- Crea espacio entre la foto y el texto -->
+    <h3><b>Las redes sociales también tienen efectos positivos que llevan a una vida más feliz</b>:
+	</h3>
+  </div>
+  
+  <!-- Photo grid (2) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="Fotos/aislamiento.jpg" style="width:75%" onclick="onClick(this)">
+	  <p> <i>Menor aislamiento social</i> </p>
+      <img src="Fotos/union.jpg" style="width:75%" onclick="onClick(this)">
+	  <p> <i>Mayor apoyo en las relaciones sociales</i> </p>
+    </div>
+
+    <div class="w3-half">
+      <img src="Fotos/apoyo.jpg" style="width:75%" onclick="onClick(this)">
+	  <p> <i>Mayor confianza en otros</i> </p>
+      <img src="Fotos/aprender.jpg" style="width:75%" onclick="onClick(this)">
+	  <p> <i>Forma de Aprendizaje</i> </p>
+    </div>
+  </div>
+
+  <!-- Inconvenientes -->
+  <div class="w3-container" id="inconvenientes" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-teal"><b>Inconvenientes</b></h1>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <p><b>¿Cuántas veces hemos comprado algo sólo por poder?</b> El mayor acceso y la facilidad para comprar bienes y servicios fomenta el creciente problema del <u>consumismo</u>, 
+	ya que se puede comprar prácticamente cualquier cosa de forma impulsiva, resultando en la compra de bienes que en realidad son innecesarios.
+	</p>
+	<p><b>¿Alguna vez has leído los términos y condiciones?</b> Es preocupante el tema de la <u>privacidad</u>. Damos nuestro consentimiento 
+	para utilizar nuestros datos al hacer uso de cualquier página web o aplicación, sin saber realmente a qué y a quién puede llegar esa información.
+	</p>
+	<p>El uso de los móviles está relacionado con un incremento en las tasas de <u>ansiedad</u> y <u>depresión</u>. El sólo tener el móvil fuera de alcance causa mayor ritmo cardíaco, 
+	presión sanguínea y nivel de estrés. Además, aquellos que pasan más de cinco horas al día frente a pantallas tienden a ser dos veces más infelices que los que sólo pasan una.
+	</p>
+	<h3> <b>Asimismo, hay que pensar en los efectos negativos de las redes sociales sobre la salud mental</b>:
+	</h3>
+  </div>
+
+ <!-- Photo grid (2) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="Fotos/baja autoestima.jpg" style="width:75%" onclick="onClick(this)">
+	  <p> <i>Bajan la autoestima</i> </p>
+	  <img src="Fotos/trofeocropped.jpg" style="width:75%" onclick="onClick(this)">
+	  <p> <i>Producen incomformidad e insatisfacción en la vida</i> </p>
+    </div>
+
+    <div class="w3-half">
+      <img src="Fotos/pelea.jpg" style="width:75%" onclick="onClick(this)">
+	  <p> <i>Causan envidia</i> </p>
+      <img src="Fotos/soledadcropped.jpg" style="width:73%" onclick="onClick(this)" align=center >
+	  <p> <i>Inducen a un sentimiento de soledad</i> </p>
+    </div>
+  </div>
+  
+    <!-- Conclusiones -->
+  <div class="w3-container" id="conclusion" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-teal"><b>Conclusiones</b></h1>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <p>Como todo en la vida, nada es blanco y negro. Es importante buscar un balance que nos permita beneficiarnos
+	de los aspectos positivos que nos brinda la tecnología, pero siempre en su cierta medida, de manera que no nos consuma. 
+    </p>
+    <h3><b>Tres claves para usar la tecnología con consciencia</b>:</h3>
+	<hr style="width:50px;border:5px solid white" class="w3-round">
+  </div>
+  
+  <!-- Menu Conclusiones -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="Fotos/educacion.jpg" alt="Educacion" style="width:100%">
+        <div class="w3-container">
+          <h3>Educación</h3>
+          <p class="w3-opacity">Pilar de la Sociedad</p>
+          <p>Es necesario equipar a las generaciones futuras con los valores necesarios para utilizar herramientas cada vez más poderosas de forma responsable y ética.
+		  </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="Fotos/dosificacion.jpg" alt="Dosificacion" style="width:100%">
+        <div class="w3-container">
+          <h3>Dosificación</h3>
+          <p class="w3-opacity">Saber Administrar</p>
+          <p>La forma de lograr la felicidad con la tecnología no es renunciar por completo a la tecnología, sino utilizarla en la medida adecuada.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="Fotos/monte.jpg" alt="Independencia" style="width:100%">
+        <div class="w3-container">
+          <h3>Independencia</h3>
+          <p class="w3-opacity">Ser Libre</p>
+          <p>Buscar espacios y momentos en los que estemos alejados de la tecnología podría ayudarnos a conseguir no ser dependientes de ella.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Creditos -->
+  <div class="w3-container" id="creditos" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-teal"><b>Créditos</b></h1>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <p> Esta página web ha sido realizada para la asignatura <b> Visual Communication </b> de Tecnun en el año 2022 por:
+	</p>
+	<ul>
+		<li>Inés Anitua</li>
+		<li>Jaime Báez</li>
+		<li>Leyre Zaragüeta</li>
+	</ul>
+	<hr style="width:50px;border:5px solid white" class="w3-round">
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
